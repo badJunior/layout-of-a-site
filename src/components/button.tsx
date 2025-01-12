@@ -1,7 +1,7 @@
 export default function Button(props: { caption: string, onClick: () => void }) {
     return (
         <button
-            className="bg-sky-500 rounded-lg hover:bg-sky-600 p-1 "
+            className="bg-button-background rounded-lg hover:bg-sky-500 p-2 text-white"
             onClick={props.onClick}
         >
             {props.caption}

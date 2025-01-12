@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom"
 import Button from "./button"
 
 export default function Header() {
     return (<div className="flex flex-row bg-slate-50 gap-4 items-center">
         <div className="grid grid-cols-[auto,auto] gap-3">
 
-            <img className="size-[40px]" src="/i.jpg ">
+            <img className="w-[60px]" src="/logoCh.jpg ">
             </img>
 
-            <nav className="flex items-center gap-1 text-xl font-bold ">
-                <a className="hover:underline">Курсы</a>
-                <a className="hover:underline">Сертификаты</a>
-                <a className="hover:underline">Словарь</a>
-                <a className="hover:underline">Контакты</a>
+            <nav className="flex items-center gap-3 text-xl font-bold ">
+                <Link to="/" className="hover:underline">Курсы</Link>
+                <Link to="/" className="hover:underline">Сертификаты</Link>
+                <Link to="/" className="hover:underline">Словарь</Link>
+                <Link to="/contacts" className="hover:underline">Контакты</Link>
             </nav>
 
         </div>
