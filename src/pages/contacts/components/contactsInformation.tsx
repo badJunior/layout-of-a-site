@@ -1,6 +1,6 @@
 export default function ContactsInformation() {
     return (
-        <div className="grid w-full h-[75vh] bg-slate-50 justify-center items-center">
+        <div className="grid w-full h-[100vh] bg-slate-50 justify-center items-center">
             <div className="flex flex-row items-start">
                 <h2 className="font-bold text-3xl">Контактная информация</h2>
             </div>

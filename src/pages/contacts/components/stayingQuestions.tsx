@@ -2,7 +2,7 @@ import Button from "../../../components/button"
 
 export default function StayingQuestions() {
     return (
-        <div className="grid w-full h-[75vh] bg-slate-50 justify-center items-center">
+        <div className="grid w-full h-[100vh] bg-slate-50 justify-center items-center">
             <div className="grid grid-cols-[1fr,2fr] ">
 
                 <img className="" src="/illustrationTwo.jpg ">

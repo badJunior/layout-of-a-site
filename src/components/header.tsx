@@ -10,8 +10,8 @@ export default function Header() {
 
             <nav className="flex items-center gap-3 text-xl font-bold ">
                 <Link to="/" className="hover:underline">Курсы</Link>
-                <Link to="/" className="hover:underline">Сертификаты</Link>
-                <Link to="/" className="hover:underline">Словарь</Link>
+                <Link to="/certificate" className="hover:underline">Сертификаты</Link>
+                <Link to="/dictionary" className="hover:underline">Словарь</Link>
                 <Link to="/contacts" className="hover:underline">Контакты</Link>
             </nav>
 

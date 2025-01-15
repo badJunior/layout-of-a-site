@@ -3,6 +3,8 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import WelcomePage from "./pages/welcome/welcomePage";
 import ContactsPage from "./pages/contacts/contactsPage";
+import DictionaryPage from "./pages/dictionary/dictionaryPage";
+import CertificatePage from "./pages/certificate/certificatePage";
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<WelcomePage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/dictionary" element={<DictionaryPage />} />
+          <Route path="/certificate" element={<CertificatePage />} />
         </Routes>
 
 
