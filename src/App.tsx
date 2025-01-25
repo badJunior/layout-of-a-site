@@ -5,6 +5,9 @@ import WelcomePage from "./pages/welcome/welcomePage";
 import ContactsPage from "./pages/contacts/contactsPage";
 import DictionaryPage from "./pages/dictionary/dictionaryPage";
 import CertificatePage from "./pages/certificate/certificatePage";
+import CoursesPage from "./pages/courses/coursesPage";
+import TheoryPage from "./pages/courses/theoryPage";
+import TheoryWithVerionsAnsweresPage from "./pages/courses/theoryWithVersionsAnsweres";
 
 function App() {
 
@@ -20,6 +23,10 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/dictionary" element={<DictionaryPage />} />
           <Route path="/certificate" element={<CertificatePage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/courses/theory/about" element={<TheoryPage />} />
+          <Route path="/courses/theory/test" element={<TheoryWithVerionsAnsweresPage />} />
+
         </Routes>
 
 
