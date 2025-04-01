@@ -8,34 +8,35 @@ import CertificatePage from "./pages/certificate/certificatePage";
 import CoursesPage from "./pages/courses/coursesPage";
 import TheoryPage from "./pages/courses/theoryPage";
 import TheoryWithVerionsAnsweresPage from "./pages/courses/theoryWithVersionsAnsweres";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <div className="flex flex-col">
-        <div className="top-0 sticky ">
-          <Header />
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <div className="flex flex-col">
+          <div className="top-0 sticky ">
+            <Header />
+          </div>
+
+          <Routes>
+            <Route path="/" element={<WelcomePage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/dictionary" element={<DictionaryPage />} />
+            <Route path="/certificate" element={<CertificatePage />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/courses/theory/about" element={<TheoryPage />} />
+
+            <Route path="/courses/theory/test" element={<TheoryWithVerionsAnsweresPage />} />
+
+          </Routes>
+          <Footer />
         </div>
-
-        <Routes>
-          <Route path="/" element={<WelcomePage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/dictionary" element={<DictionaryPage />} />
-          <Route path="/certificate" element={<CertificatePage />} />
-          <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/courses/theory/about" element={<TheoryPage />} />
-          <Route path="/courses/theory/test" element={<TheoryWithVerionsAnsweresPage />} />
-
-        </Routes>
-
-
-
-        <Footer />
-
-      </div>
-    </BrowserRouter>
-
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 

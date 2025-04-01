@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import Button from "../../components/button"
 
 export default function CoursesPage() {
     return (
